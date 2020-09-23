@@ -37,3 +37,19 @@ E - 20
 
 -------
 
+**Задание 2+)** Доработайте задание 2 и выведите не одну, а 5 самых употребляемых букв (с их количеством) в порядке уменьшения частоты использования
+
+Пример:
+```
+Введите строку текста:
+> All the world’s a stage, And all the men and women merely players; They have their exits and their entrances; And one man in his time plays many parts. BY WILLIAM SHAKESPEARE
+Самые частоупотребляемые буквы:
+E - 20
+A - 18
+N - 12
+L - 10
+S - 10
+T - 10
+```
+
+-------
