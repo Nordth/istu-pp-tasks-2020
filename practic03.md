@@ -133,3 +133,17 @@ namespace Task3_4
 > 0
 Сумма чисел: 6.5
 ```
+
+-------
+
+**Задание 4+)** Реализуйте второй вариант `INumberProvider`, который извлекает числа не из консоли, а из массива чисел. Назовите этот класс `ArrayNumberProvider`. Он должен принимать в конструкторе массив типа `float` и поочередно извлекать из него элементы. Измените код метода `Main` в класс `Program` на следующий:
+
+```
+static void Main(string[] args)
+{
+    float[] arr = { 5, 3.5f, -2 };
+    float sum = CalculateSum(new ArrayNumberProvider(arr));
+    Console.WriteLine("Сумма чисел: {0}", sum);
+    Console.ReadLine();
+}
+```
