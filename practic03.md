@@ -17,7 +17,7 @@
   - создайте список `List<Message> messages`
   - программно заполнителе его 3-мя экземплярами `SmsMessage` и 3-мя экземплярами `EmailMessage`
   - попросите пользователя ввести строку для поиска `query`
-  - посчитайте и выыедите кол-во сообщений, в которых присутсвует строка `query`, используя метод `static bool Search(Message message, string query)`
+  - посчитайте и выыедите кол-во сообщений, в которых присутсвует подстрока `query`, используя метод `static bool Search(Message message, string query)`
   
 
 -------
@@ -79,3 +79,7 @@ From <test@example.com> "You are winner!": Hi! Congratulations! You ...
 -------
 
 **Задание 3+)** Переделайте в программе из задания №3 метод `GetSquare` в публичное *свойство* `Square`
+
+-------
+
+**Задание 4)** 
