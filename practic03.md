@@ -82,4 +82,54 @@ From <test@example.com> "You are winner!": Hi! Congratulations! You ...
 
 -------
 
-**Задание 4)** 
+**Задание 4)** Кажется, кто-то оставил здесь решение четвертой задачи:
+
+```
+using System;
+
+namespace Task3_4
+{
+    interface INumberProvider
+    {
+        bool IsFinished();
+        float GetNumber();
+    }
+    
+    class Program
+    {
+        static float CalculateSum(INumberProvider numberProvider)
+        {
+            float res = 0;
+            while (!numberProvider.IsFinished())
+            {
+                res += numberProvider.GetNumber();
+            }
+            return res;
+        }
+
+        static void Main(string[] args)
+        {
+            float sum = CalculateSum(new ConsoleNumberProvider());
+            Console.WriteLine("Сумма чисел: {0}", sum);
+            Console.ReadLine();
+        }
+    }
+}
+```
+
+Но забыл вставить реализацию класса `ConsoleNumberProvider`. Вам придется восполнить этот недостаток. 
+
+Не меняя класс `Program`, вы должны объявить класс `ConsoleNumberProvider`, который реализует интерфейс `INumberProvider`. Задача этого класса - запросить ввод чисел у пользователя. Как только пользователь введет число 0, ввод должен завершиться. 
+
+Интерфейс `INumberProvider`:
+  - Метод `GetNumber` - возвращает очередное введенное число
+  - Метод `IsFinished` - возвращает `true`, если ввод закончен
+  
+Пример:
+```
+> 5
+> 3.5
+> -2
+> 0
+Сумма чисел: 6.5
+```
