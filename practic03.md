@@ -75,3 +75,7 @@ From <test@example.com> "You are winner!": Hi! Congratulations! You ...
 
 Площадь всех фигур: 329.7592
 ```
+
+-------
+
+**Задание 3+)** Переделайте в программе из задания №3 метод `GetSquare` в публичное *свойство* `Square`
