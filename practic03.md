@@ -11,7 +11,7 @@
 
 Класс `Message` базовый для двух других классов: `SmsMessage` и `EmailMessage`, которые содержат дополнительные поля
 
-1.2) Разработайте метод `static bool Search(Message message, string query)`, который возращает `true`, если в переданном сообщении `message.text` содержится подстрока `query`
+1.2) Разработайте метод `static bool Search(Message message, string query)`, который возращает `true`, если в переданном сообщении `message.text` содержится подстрока `query`. Для реализации вы можете использовать стандартный метод [Contains](https://docs.microsoft.com/ru-ru/dotnet/api/system.string.contains) у строки
 
 1.3) В основной программе:
   - создайте список `List<Message> messages`
