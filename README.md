@@ -9,3 +9,4 @@
 Лаб. работы
 --------
 - [Лаб. работа №1](priklad_spo_lab1.pdf)
+- [Лаб. работа №2](priklad_spo_lab2.pdf)
